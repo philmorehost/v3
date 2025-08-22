@@ -1,0 +1,65 @@
+.airtime-card-container{
+	width: 24%;
+	height: 110px;
+	background: white;
+	display: inline-block;
+	border: 1px dashed black;
+    padding:0 0 4px 0;
+	margin: 0 0.4% 0 0;
+}
+
+.airtime-carrier-logo{
+	width:10%;
+	height:auto;
+	margin:10px 15px 5px 5px;
+	float: right;
+	border-radius: 30%;
+}
+
+.airtime-company-name{
+	font-weight: bold;
+	float: left;
+	margin: 15px 5px 3px 5%;
+	font-size:10px;
+}
+
+.airtime-amount{
+	font-weight: bold;
+	float: right;
+	margin: 15px 5px 3px 0px;
+	font-size:9px;
+}
+
+.airtime-ref{
+	float: left;
+	font-size:9px;
+	clear:both;
+	margin: 0px 0px 0px 15px;
+}
+
+.airtime-serial-no{
+	float: left;
+	font-size:9px;
+	clear:both;
+	margin: 0px 0px 0px 15px;
+}
+
+.airtime-pin{
+	float: left;
+	font-size:9px;
+	clear:both;
+	margin: 0px 0px 0px 15px;
+}
+
+.airtime-date{
+	float: left;
+	font-size:9px;
+	clear:both;
+	margin: 0px 0px 0px 15px;
+}
+.airtime-dial{
+	float: left;
+	font-size:9px;
+	clear:both;
+	margin: 0px 0px 0px 15px;
+}
