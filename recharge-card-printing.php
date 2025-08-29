@@ -148,8 +148,15 @@
 			$log_rechargecard_message = "Insufficient Fund, Fund Wallet And Try Again! ";
 		}
 		
-		$_SESSION["transaction_text"] = $log_rechargecard_message;
-		header("Location: ".$_SERVER["REQUEST_URI"]);
+		if($log_rechargecard_message == "Recharge Card PINs generated Successfully"){
+			$_SESSION["transaction_text"] = $log_rechargecard_message;
+			header("Location: /print_card.php?ref=".$ref_id);
+			exit;
+		}else{
+			$_SESSION["transaction_text"] = $log_rechargecard_message;
+			header("Location: ".$_SERVER["REQUEST_URI"]);
+			exit;
+		}
 	}
 	
 	
