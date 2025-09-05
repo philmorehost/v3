@@ -1,0 +1,168 @@
+/* Dashboard Specific CSS */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.wallet-balance-container {
+    margin-bottom: 20px;
+}
+
+.wallet-balance-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wallet-balance-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.wallet-balance-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.reload-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.reload-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.reload-img {
+	animation: reload 3s 1;
+}
+
+@keyframes reload{
+	0%{ transform: rotate(0deg); }
+	100%{ transform: rotate(360deg); }
+}
+
+.wallet-balance-amount h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.wallet-balance-actions {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #5E17E8;
+}
+
+.btn-secondary {
+    background-color: #818181;
+    margin-left: 10px;
+}
+
+.btn-service {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    color: #333;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+    transition: all 0.3s ease;
+}
+
+.btn-service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-service i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #5E17E8;
+}
+
+.services-container {
+    margin-top: 20px;
+}
+
+.service-category {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-category h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.transaction-history {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-history h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.transaction-history table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transaction-history th, .transaction-history td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.transaction-history th {
+    font-weight: 600;
+}
